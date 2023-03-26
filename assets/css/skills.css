@@ -1,0 +1,148 @@
+.calendar img.spinner {
+  width: 10px;
+  margin-top: 500px;
+  min-height: 70px;
+}
+
+.text-color {
+  color: #e1a34c;
+}
+
+.text-lg-2 {
+  font-size: 50px;
+  line-height: 56px;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 80px;
+  position: relative;
+}
+
+.border-top-1 {
+  border-top: 1px solid #19273e;
+}
+.skills-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.skills-sec > p {
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 1px;
+}
+
+.relayout {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, auto);
+  margin: auto;
+  justify-content: center;
+  align-self: center;
+  padding: 2%;
+}
+
+.skill-back {
+  background-color: white;
+  border-radius: 15px;
+}
+.slider-img:before {
+  z-index: -1;
+}
+
+.ali {
+  margin-top: 5%;
+  justify-content: space-around;
+}
+
+.space {
+  justify-content: space-between !important;
+}
+.white {
+  color: white !important;
+}
+.skills-sec > img {
+  width: 90%;
+}
+
+.sp > img,
+.sp2 > img {
+  border-radius: 15px;
+}
+
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  .relayout {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+  }
+  .skills-sec {
+    margin: auto;
+  }
+  .skills-sec > img {
+    width: 90%;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .sp > img {
+    margin-top: 15%;
+  }
+  .sp2 {
+    margin-bottom: 6%;
+  }
+  .direct {
+    flex-direction: column-reverse;
+  }
+  .direct1 {
+    margin-top: -10%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+  .relayout {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+  }
+  .skills-sec {
+    margin: auto;
+  }
+  .skills-sec > img {
+    width: 90%;
+  }
+  .sp {
+    align-self: center;
+  }
+  .sp2 {
+    align-self: center;
+  }
+  .ali {
+    margin-top: 15%;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .sp > img {
+    margin-top: 15%;
+  }
+}
+.contrib-number {
+  /* color: white !important; */
+  font-size: 23px;
+  font-weight: 600;
+}
+.table-column {
+  background-color: white;
+}
+.text-muted {
+  font-size: 14px;
+  font-weight: 600;
+}
+/*phone tooltip*/
