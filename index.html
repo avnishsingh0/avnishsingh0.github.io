@@ -95,17 +95,19 @@
             <img class="home-img" src="img/background/yellow.jpg" alt="" />
           </div>
           <h1>Hi, I am <span>Avnish Kumar</span></h1>
-          <p id="user-detail-intro">
+          <div id="user-detail-intro">
+          <p >
             I am a frontend web developer. I can provide clean code and pixel
             perfect design.<br />
             I also make website more & more interactive with web animations.
           </p>
+        </div>
           <div class="st-hero-social-links" id="resume-button-2">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/avnish-kumar-a9347b239/"
               class="st-social-btn"
-              d="contact-linkedin"
+              id="contact-linkedin"
             >
               <i class="fab fa-linkedin"></i>
             </a>
@@ -207,12 +209,11 @@
       <div class="container">
         <div class="st-section-heading st-style1">
           <h4 class="st-section-heading-title">MY SKILLS</h4>
-          <!-- <h2 class="st-section-heading-subtitle">MY SKILLS</h2> -->
         </div>
         <div class="st-height-b25 st-height-lg-b25"></div>
       </div>
 
-      <div class="container p-5 skill-back">
+      <div class="container p-5 skill-back skills-card">
         <div class="row justify-content-center relayout">
           <div class="skills-sec skills-card">
             <img class="skills-card-img" src="./img/icon/avnish-html.png" />
@@ -536,12 +537,14 @@
         <div class="col-lg-8">
           <div class="st-section-heading st-style1">
             <!-- <h2 class="title">Github Stats</h2> -->
-            <h4 class="st-section-heading-title">Github Stats</h4>
+            <h4 class="st-section-heading-title" id="github-streak-stats">Github Stats</h4>
+          <div id="github-top-langs"></div>
+          <div id="github-stats-card"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" >
       <div class="calendar mt-1 mb-5 react-activity-calendar">Loading the data just for you.</div>
     </div>
 
