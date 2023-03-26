@@ -251,7 +251,7 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
-  #hero-sec{
+  #home{
     padding-top: 5rem;
   }
   .st-height-lg-b0 {
@@ -385,7 +385,7 @@ a:hover {
   }
 }
 @media all and (min-width:260px) and (max-width:380px){
-  #hero-sec{
+  #home{
     padding-top: 1rem;
   }
 }
@@ -393,13 +393,13 @@ a:hover {
   .st-hero.st-style2 {
     
   }
-  #hero-sec{
+  #home{
     padding-top: 20rem;
   }
   
   
 }
-#hero-sec{
+#home{
   margin-top: 3rem;
 }
 /*--------------------------------------------------------------
