@@ -389,9 +389,9 @@ a:hover {
     padding-top: 1rem;
   }
 }
-@media all and (min-width:700px) and (max-width:1100px){
+@media all and (min-width:700px) and (max-width:1180px){
   .st-hero.st-style2 {
-    
+    height: 60vh;
   }
   #hero-sec{
     padding-top: 20rem;
@@ -1000,7 +1000,7 @@ hr {
 }
 
 .st-hero.st-style2 {
-  /* height: 100vh; */
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
