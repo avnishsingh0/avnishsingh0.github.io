@@ -67,8 +67,10 @@
                   </li>
                   <li id="resume-button-1">
                       <a
-                      href="./resume/fp06_270-Avnish_Kumar_Resume.pdf"
+                      href="./Avnish_Kumar_Resume.pdf"
                       target="_blank"
+                      download="Avnish_Kumar_Resume.pdf"
+                      
                       class="st-smooth-move nav-link resume"
                       id="resume-link-1"
                       >Resume</a
@@ -126,10 +128,11 @@
               <i class="fab fa-github"></i>
             </a>
             <div id="resume-button-2">
+              
               <a
-              href="./resume/fp06_270-Avnish_Kumar_Resume.pdf"
+              href="Avnish_Kumar_Resume.pdf"
               target="_blank"
-              download
+              download="Avnish_Kumar_Resume.pdf"
               class="st-btn st-style1 st-color1"
               id="resume-link-2"
               >My Resume</a
@@ -709,7 +712,14 @@
       </div>
     </footer>
     <!-- Scripts -->
-
+<script>
+  let resumebtn1= document.getElementById("resume-button-1").addEventListener("click",()=>{
+    window.open("https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link","_blank")
+  })
+  let resumebtn2= document.getElementById("resume-button-2").addEventListener("click",()=>{
+    window.open("https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link","_blank")
+  })
+</script>
     <script
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
