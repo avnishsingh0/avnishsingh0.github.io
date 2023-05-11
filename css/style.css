@@ -17,6 +17,7 @@ html {
   line-height: 1.6em;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  
 }
 
 h1,
@@ -75,9 +76,7 @@ ol {
 dfn,
 cite,
 em,
-i {
-  font-style: italic;
-}
+
 
 blockquote {
   margin: 0 15px;
@@ -91,6 +90,7 @@ address {
   border: 0;
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 img {
   border: 0;
@@ -249,7 +249,12 @@ a:hover {
     height: 210px;
   }
 }
-
+@media all and (min-width:260px) and (max-width:380px){
+  #myBtn{
+    display: none;
+  }
+ 
+}
 @media screen and (max-width: 991px) {
   #hero-sec{
     padding-top: 5rem;
@@ -388,6 +393,7 @@ a:hover {
   #hero-sec{
     padding-top: 1rem;
   }
+  
 }
 @media all and (min-width:700px) and (max-width:1180px){
   .st-hero.st-style2 {
@@ -405,10 +411,25 @@ a:hover {
 /*--------------------------------------------------------------
 3. General
 ----------------------------------------------------------------*/
+
 .st-mp0 {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.st-iconbox-ico img{
+  /* border: 2px solid red; */
+  border-radius: 10px;
+}
+
+.project-tech-stack{
+  color: #fec544;
+}
+
+#project-tech-stack_head{
+  font-size: 14px;
+  margin-top: -45px;
+  /* border: 1px solid red; */
 }
 
 .st-flex-center {
@@ -1375,6 +1396,7 @@ canvas {
     margin-bottom: 40px;
     margin-top: 60px;
   }
+ 
 }
 
 /*--------------------------------------------------------------
@@ -1481,36 +1503,28 @@ canvas {
   #hosting_div{
       margin-top: 3rem;
       display: flex;
-      /* width: 60%; */
-      /* margin-left: -20px; */
   } 
   #live,
    #host {
   font-weight: 600;
-  min-width: 150px;
+  min-width: 150px; 
   
 }
-  
 }
 @media screen and (max-width: 768px) {
   #hosting_div{
     margin-top: 3rem;
     display: flex;
-    /* width: 60%; */
-    /* margin-left: -20px; */
+    /* margin-left: -10px; */
   } 
   #live,
    #host {
- 
- 
-  
   font-weight: 600;
-  
   min-width: 150px;
-  
+}  
 }
-  
-}
+
+
 /*--------------------------------------------------------------
 9. Section Heading
 ----------------------------------------------------------------*/
@@ -1581,7 +1595,7 @@ canvas {
   display: flex;
   /* padding: 10px; */
   /* width: 60%; */
-  /* margin-left: -20px; */
+  margin-left: -15px;
 } 
 #live,
  #host {
@@ -1665,8 +1679,12 @@ margin-left: 5px;
   transition: all 0.4s ease;
   border: 1px solid #232935;
   background-color: #101624;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
+.st-iconbox.st-style1:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .st-iconbox.st-style1:hover .st-iconbox-icon {
   border: 0.5px solid #fec544;
 }
@@ -1712,8 +1730,8 @@ margin-left: 5px;
 }
 .st-iconbox.st-style1 .st-iconbox-title {
   font-weight: 600;
-  /* line-height: 1.2em; */
-  font-size: 30px;
+  line-height: 30px;
+  font-size: 20px;
   margin-bottom: -5px;
   margin-top: 15px;
   -webkit-transition: all 0.4s ease;
@@ -1731,13 +1749,20 @@ margin-left: 5px;
 }
 #hosting_div{
   border: 0px solid red;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+.project-description{
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -10px;
 }
 .st-iconbox.st-style1 .st-iconbox-text {
   margin-bottom: -6px;
 }
 .st-iconbox-text{
-  text-align:left
+  text-align:left;
+  font-size: 14px;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -3167,3 +3192,4 @@ margin-left: 5px;
       -ms-flex-align: center;
           align-items: center;
 }
+

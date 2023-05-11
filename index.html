@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Laralink" />
+    <script
+      src="https://kit.fontawesome.com/18dcf284b5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Avnish</title>
 
@@ -15,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/skills.css" />
@@ -23,9 +27,62 @@
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
 
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #131f33;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #ffc006;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: white;
+      }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #131f33;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        border: 2px solid rgb(116, 106, 88);
+      }
+      #page_top {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: -4px;
+        margin-left: -2px;
+      }
+      #myBtn:hover {
+        border: 2px solid white;
+      }
+    </style>
   </head>
 
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up" id="page_top"></i>
+    </button>
+
     <!-- Start Header Section -->
     <header class="st-site-header st-style1 st-sticky-header">
       <div class="st-main-header">
@@ -66,7 +123,7 @@
                     >
                   </li>
                   <li id="resume-button-1">
-                      <a
+                    <a
                       href="./Avnish_Kumar_Resume.pdf"
                       target="_blank"
                       download="Avnish_Kumar_Resume.pdf"
@@ -93,14 +150,14 @@
           <div class="st-author">
             <img class="home-img" src="img/background/yellow.jpg" alt="" />
           </div>
-          <h1>Hi, I am <span>Avnish Kumar</span></h1>
+          <h1>Hi, I am <span id="myname">Avnish Kumar</span></h1>
           <div>
-          <p >
-            I am a frontend web developer. I can provide clean code and pixel
-            perfect design.<br />
-            I also make website more & more interactive with web animations.
-          </p>
-        </div>
+            <p>
+              I am a frontend web developer. I can provide clean code and pixel
+              perfect design.<br />
+              I also make website more & more interactive with web animations.
+            </p>
+          </div>
           <div class="st-hero-social-links">
             <a
               target="_blank"
@@ -126,21 +183,19 @@
               <i class="fab fa-github"></i>
             </a>
             <div id="resume-button-2">
-              
               <a
-              href="Avnish_Kumar_Resume.pdf"
-              target="_blank"
-              download="Avnish_Kumar_Resume.pdf"
-              class="st-btn st-style1 st-color1"
-              id="resume-link-2"
-              >My Resume</a
-            >
+                href="Avnish_Kumar_Resume.pdf"
+                target="_blank"
+                download="Avnish_Kumar_Resume.pdf"
+                class="st-btn st-style1 st-color1"
+                id="resume-link-2"
+                >My Resume</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-    <br/>
 
     <!-- Start about Section -->
     <section id="abouts" class="st-about-wrap nav-link about">
@@ -191,9 +246,13 @@
                   </div>
                   <ul class="st-text-block-details st-mp0">
                     <li><span>Birthday</span> : <span>June 10, 2000</span></li>
-                    <li><span>Phone</span> : <span id="contact-phone">8340225267</span></li>
                     <li>
-                      <span>Email</span> : <span  id="contact-email">avnishbdp@gmail.com</span>
+                      <span>Phone</span> :
+                      <span id="contact-phone">8340225267</span>
+                    </li>
+                    <li>
+                      <span>Email</span> :
+                      <span id="contact-email">avnishbdp@gmail.com</span>
                     </li>
                     <li><span>From</span> : <span>Sitamarhi, bihar</span></li>
                     <li><span>Language</span> : <span>English, Hindi</span></li>
@@ -207,10 +266,10 @@
     </section>
 
     <!-- Start Skill Seciton -->
-    
+
     <section id="skill" class="st-dark-bg nav-link skills">
       <div class="st-height-b100 st-height-lg-b80"></div>
-      
+
       <div class="container">
         <div class="st-section-heading st-style1">
           <h4 class="st-section-heading-title">MY SKILLS</h4>
@@ -281,7 +340,7 @@
     </section>
 
     <!-- Start project secition -->
-    <br/>
+    <br />
     <section id="project" class="nav-link projects">
       <div class="st-height-b100 st-height-lg-b80"></div>
       <div class="container">
@@ -290,46 +349,70 @@
         </div>
       </div>
 
-      <div  class="container">
+      <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 project-card">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-ico">
-                <img class="img" src="./img/background/myntra.jpg" alt="" />
+                <img class="img" src="./img/background/lens.png" alt="" />
               </div>
-              <h2 class="st-iconbox-title project-title">Myntra Clone</h2>
+              <h2 class="st-iconbox-title project-title">Lenskart Clone</h2>
               <br />
               <div class="st-iconbox-text">
-                <b class="project-description"
-                  >Myntra is an Indian e-commerce platform that offers a wide
-                  range of fashion and lifestyle products.</b
+                <p class="project-description">
+                  It's my major project where I've used MERN stack to make the
+                  clone of Lenskart website along with backend integration and
+                  payment gateway integration with all the features of an
+                  e-commerce website.
+                </p>
+                <br />
+                <br />
+                <p id="project-tech-stack_head">
+                  <b class="project-tech-stack">Tech Stack: </b> ReactJS, Redux,
+                  MongoDB, Express, NodeJS, ChakraUI, CSS
+                </p>
+              </div>
+
+              <div id="hosting_div">
+                <a
+                  href="https://eyescare.vercel.app/"
+                  target="_blank"
+                  id="live"
+                  class="st-btn st-style1 st-color1 project-deployed-link"
+                  >LIVE</a
                 >
+                <a
+                  href="https://github.com/avnishsingh0/silent-toes-7433"
+                  target="_blank"
+                  id="host"
+                  class="st-btn st-style1 st-color1 project-github-link"
+                  >HOST</a
+                >
+              </div>
+            </div>
+            <div class="st-height-b0 st-height-lg-b30"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 project-card">
+            <div class="st-iconbox st-style1">
+              <div class="st-iconbox-ico">
+                <img class="img" src="./img/background/Add.png" alt="" />
+              </div>
+              <!-- <h2 class="st-iconbox-title project-title">Myntra Clone</h2> -->
+              <p class="st-iconbox-title project-title">Myntra Clone</p>
+              <br />
+              <div class="st-iconbox-text">
+                <p class="project-description">
+                  This project is about building an online E-commerce web
+                  application with backend integration showing the
+                  functionalities of an e-commerce website like filtering the
+                  products, add to cart, wishlist etc
+                </p>
                 <br />
                 <br />
-                <p>
-                  <b class="project-tech-stack">Tech Stack: </b> HTML | CSS |
-                  JavaScript | ReactJS | REACT-REDUX | MongoDB | EXPRESS |
-                  NodeJS | ChakraUI
+                <p id="project-tech-stack_head">
+                  <b class="project-tech-stack">Tech Stack: </b> ReactJS, Redux,
+                  MongoDB, Express, NodeJS, ChakraUI, CSS
                 </p>
-                <p>
-                  <b>Features:</b>Responsive Navbar | Filter Section | Search
-                  bar | Cart Page | User Authentication | Database | Admin Panel
-                  | Responsive Layout
-                </p>
-                <b>Areas of responsibility:</b>
-                <ul id="ul">
-                  <li>
-                    Developed responsive layout for all components and pages.
-                  </li>
-                  <li>
-                    Configured React Routing and linking of different pages.
-                  </li>
-                  <li>
-                    Used MongoDB Atlus for fetching data and displaying in shop
-                    section or cart section for different categories.
-                  </li>
-                </ul>
-                <b>A Solo Project built and executed in four days</b>
               </div>
               <div id="hosting_div">
                 <a
@@ -354,39 +437,28 @@
           <div class="col-lg-4 col-md-6 project-card">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-ico">
-                <img class="img" src="./img/background/catline2.jpg" alt="" />
+                <img
+                  class="img"
+                  src="https://mohit-portfolio.vercel.app/assets/adidas.03048389.jpg"
+                  alt=""
+                />
               </div>
-              <h2 class="st-iconbox-title project-title">Caratlane Clone</h2>
+
+              <h2 class="st-iconbox-title project-title">Cartlane Clone</h2>
               <br />
               <div class="st-iconbox-text">
-                <b class="project-description"
-                  >Cartlane is Indian online Jewllery Retailer. There are
-                  thousands of Jewellery Items.</b
-                >
-                <br />
-                <br />
-                <p>
-                  <b class="project-tech-stack">Tech Stack: </b> HTML5 | CSS3 |
-                  Javascript | JS6 | ReactJS | React-Redux | Chakra UI
+                <p class="project-description">
+                  This project is about building an online E-commerce Jewellery
+                  web application showing the functionalities of an e-commerce
+                  Jewellery website like sorting & search food, add to cart,
+                  trending items etc.
                 </p>
-                <p>
-                  <b>Features:</b> Home Page,Login/Signup Page, Products Page,
-                  SingleProducts Page,Wishlist Page, Cart Page,Checkout Page
-                </p>
-                <b>Areas of responsibility:</b>
-                <ul id="ul">
-                  <li>Created the responsive home page.</li>
-                  <li>Developed Admin Page</li>
-                  <li>
-                    In admin page admin can insert, edit or delete products
-                  </li>
-                </ul>
                 <br />
-                <b
-                  >This is a collaborative Project from Masai School in the
-                  Construct Week developed in 5 days. We are a team of 5
-                  members:</b
-                >
+                <br />
+                <p id="project-tech-stack_head">
+                  <b class="project-tech-stack">Tech Stack: </b> ReactJS,
+                  Redux,Bootstrap, Rest API, ChakraUI, CSS
+                </p>
               </div>
 
               <div id="hosting_div">
@@ -409,58 +481,40 @@
             <div class="st-height-b0 st-height-lg-b30"></div>
           </div>
 
-          <div class="col-lg-4 col-md-6 project-card">
+          <div class="col-lg-4 col-md-6 project-card" id="snap">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-ico">
-                <img class="img" src="./img/background/sneapdeal2.jpg" alt="" />
+                <img
+                  class="img"
+                  src="https://mohit-portfolio.vercel.app/assets/foodStore.96e054c6.jpg"
+                  alt=""
+                />
               </div>
-
-              <h2 class="st-iconbox-title project-title">SnapDeal Clone</h2>
+              <h2 class="st-iconbox-title project-title">Sugar Cosmetics</h2>
               <br />
               <div class="st-iconbox-text">
-                <b class="project-description"
-                  >SnapDeal is an Indian e-commerce platform that offers a wide
-                  range of fashion and lifestyle products.</b
-                >
-                <br />
-                <br />
-                <p>
-                  <b class="project-tech-stack">Tech Stack: </b> HTML5 | CSS3 |
-                  Javascript | JS6 | ReactJS | React-Redux | Chakra UI | APIs
-                </p>
-                <p>
-                  <b>Features:</b> Responsive Navbar | Filter Section | Search
-                  bar | Cart Page | User Authentication | Admin Panel |
-                  Responsive Layout
+                <p class="project-description">
+                  This website is a clone of “Sugar Cosmetics” which is an
+                  e-commerce store & here I implemented some functionalities
+                  product sorting & filtering, add to cart, coupon discount etc.
                 </p>
                 <br />
-                <b>Areas of responsibility:</b>
-                <ul id="ul">
-                  <li>
-                    Created Product details page and configured overall routing.
-                  </li>
-                  <li>Developed cart functionality .</li>
-                  <li>Developed payment functionality.</li>
-                </ul>
                 <br />
-
-                <b
-                  >This is a collaborative Project from Masai School in the
-                  Construct Week developed in 5 days. We are a team of 5
-                  members:</b
-                >
+                <p id="project-tech-stack_head">
+                  <b class="project-tech-stack">Tech Stack: </b> ReactJS, Redux,
+                  MongoDB, Express, NodeJS, ChakraUI, CSS
+                </p>
               </div>
-
               <div id="hosting_div">
                 <a
-                  href="https://megadeal.vercel.app/"
+                  href="https://masai-cosmetics.netlify.app/"
                   target="_blank"
                   id="live"
                   class="st-btn st-style1 st-color1 project-deployed-link"
                   >LIVE</a
                 >
                 <a
-                  href="https://github.com/avnishsingh0/illustrious-health-8601"
+                  href="https://github.com/avnishsingh0/sugarcosmetics-clone"
                   target="_blank"
                   id="host"
                   class="st-btn st-style1 st-color1 project-github-link"
@@ -470,58 +524,40 @@
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
           </div>
-
           <div class="col-lg-4 col-md-6 project-card" id="snap">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-ico">
-                <img
-                  class="img"
-                  src="./img/background/Product-collage_1.jpg"
-                  alt=""
-                />
+               
+                <video class="img" src="./img/background/videoport.mp4" autoplay loop>
+                  Your browser does not support the video tag.
+              </video>
               </div>
-              <h2 class="st-iconbox-title project-title">Sugar Cosmetics</h2>
+              <h2 class="st-iconbox-title project-title">Portfolio</h2>
               <br />
               <div class="st-iconbox-text">
-                <b class="project-description"
-                  >Sugar Cosmetics is a makeup brand with a popular line of
-                  cosmetics designed to enhance and highlight different
-                  areas.</b
-                >
+                <p class="project-description">
+                  This is my new portfolio, showcasing my skills and projects,
+                  which I recently developed using React, JavaScript, CSS, and
+                  Chakra UI. With careful consideration,ensuring the protection
+                   of the code and preserving its uniqueness.
+                </p>
                 <br />
                 <br />
-                <p>
-                  <b class="project-tech-stack">Tech Stack: </b> HTML5 | CSS3 |
-                  Javascript | JS6 | ReactJS | React-Redux | APIs
+                <p id="project-tech-stack_head">
+                  <b class="project-tech-stack">Tech Stack: </b> HTML5, CSS3, JavaScript, Bootstrap, jquery, firebase
                 </p>
-                <p>
-                  <b>Features:</b> Responsive Navbar | Filter Section | Search
-                  bar | Cart Page | User Authentication | Admin Panel |
-                  Responsive Layout
-                </p>
-                <b>Areas of responsibility:</b>
-                <ul id="ul">
-                  <li>
-                    Created Product details page and configured overall routing.
-                  </li>
-                  <li>Developed cart functionality .</li>
-                  <li>Developed payment functionality.</li>
-                </ul>
-                <b
-                  >This is a collaborative Project from Masai School in the
-                  Construct Week developed in 5 days. We are a team of 5
-                  members:</b
-                >
               </div>
               <div id="hosting_div">
                 <a
                   href="https://masai-cosmetics.netlify.app/"
+                  target="_blank"
                   id="live"
                   class="st-btn st-style1 st-color1 project-deployed-link"
                   >LIVE</a
                 >
                 <a
                   href="https://github.com/avnishsingh0/sugarcosmetics-clone"
+                  target="_blank"
                   id="host"
                   class="st-btn st-style1 st-color1 project-github-link"
                   >HOST</a
@@ -536,9 +572,13 @@
     </section>
 
     <!-- Github Stats -->
-    <div class="st-section-heading st-style1"><h2 class="st-section-heading-title">Github Stats</h2></div>
-    <div class="container" >
-      <div class="calendar mt-1 mb-5 react-activity-calendar">Loading the data just for you.</div>
+    <div class="st-section-heading st-style1">
+      <h2 class="st-section-heading-title">Github Stats</h2>
+    </div>
+    <div class="container">
+      <div class="calendar mt-1 mb-5 react-activity-calendar">
+        Loading the data just for you.
+      </div>
     </div>
     <!-- Github Stats -->
     <div class="container">
@@ -546,20 +586,36 @@
         <div class="col-lg-8">
           <div class="st-section-heading st-style1">
             <!-- <h2 class="title">Github Stats</h2> -->
-            <br/>
-            <div  > <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=avnishsingh0" alt="avnish"/></div>
-         <br/>
-            <div >
-           <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=avnishsingh0&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"/>
-          </div><br/>
-          <div ><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=avnishsingh0&theme=react&border_radius=4.6&show_icons=true&count_private=true&hide_border=true&show_icons=true" alt="avnish"/></div>
+            <br />
+            <div>
+              <img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=avnishsingh0"
+                alt="avnish"
+              />
+            </div>
+            <br />
+            <div>
+              <img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=avnishsingh0&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true"
+              />
+            </div>
+            <br />
+            <div>
+              <img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=avnishsingh0&theme=react&border_radius=4.6&show_icons=true&count_private=true&hide_border=true&show_icons=true"
+                alt="avnish"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
+
     <!-- Start Contact Seciton -->
-    <br/>
+    <br />
     <section id="contacts" class="st-dark-bg nav-link contact">
       <div class="st-height-b100 st-height-lg-b80"></div>
       <div class="container">
@@ -697,7 +753,7 @@
       </div>
       <div class="st-height-b100 st-height-lg-b80"></div>
     </section>
-    
+
     <!-- Start Footer Seciton -->
     <footer>
       <div class="container">
@@ -709,14 +765,25 @@
       </div>
     </footer>
     <!-- Scripts -->
-<script>
-  let resumebtn1= document.getElementById("resume-button-1").addEventListener("click",()=>{
-    window.open("https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link","_blank")
-  })
-  let resumebtn2= document.getElementById("resume-button-2").addEventListener("click",()=>{
-    window.open("https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link","_blank")
-  })
-</script>
+
+    <script>
+      let resumebtn1 = document
+        .getElementById("resume-button-1")
+        .addEventListener("click", () => {
+          window.open(
+            "https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link",
+            "_blank"
+          );
+        });
+      let resumebtn2 = document
+        .getElementById("resume-button-2")
+        .addEventListener("click", () => {
+          window.open(
+            "https://drive.google.com/file/d/1N7m-F-TyMZur94g7Qnn0LooeNjTQhTpZ/view?usp=share_link",
+            "_blank"
+          );
+        });
+    </script>
     <script
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
@@ -726,12 +793,41 @@
     <script>
       GitHubCalendar(".calendar", "avnishsingh0");
       GitHubCalendar(".calendar", "avnishsingh0", { responsive: true });
-      GitHubCalendar(".calendar", "avnishsingh0", {
-        
-      });
+      GitHubCalendar(".calendar", "avnishsingh0", {});
     </script>
-    
+
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document with smooth scrolling
+      function topFunction() {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          800
+        );
+      }
+    </script>
   </body>
 </html>
